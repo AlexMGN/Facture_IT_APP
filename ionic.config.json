@@ -1,0 +1,7 @@
+{
+  "name": "Facture_IT",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
