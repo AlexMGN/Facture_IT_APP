@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="logo_wrapper">
+    <div (click)="goBack()" class="circleBase type1"><div class="arrow-left"></div></div>
+    <img src="../../assets/logo.svg" alt="">
+    <img class="avatar" src="https://firebasestorage.googleapis.com/v0/b/webradio-stream.appspot.com/o/Users%2F29%2FImages%2Fimage_1.png?alt=media&token=303af267-fa31-4ec1-9869-27670764b691" alt="">
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div class="profil_settings">
+    <div class="setting_personnal">
+      <p [routerLink]="['/profil-setting-page']">Modifier le profil</p>
+    </div>
+    <div class="setting_password">
+      <p [routerLink]="['/password-setting-page']">Modifier le mot de passe</p>
+    </div>
+    <div class="setting_password">
+      <p [routerLink]="['/login-page']">Se déconnecter</p>
+    </div>
+  </div>
+
+  <div class="delete_account">
+    <hr style="border-bottom: 1px solid #707070;width: 85%;">
+    <p>Supprimer son compte</p>
+  </div>
+
+</ion-content>

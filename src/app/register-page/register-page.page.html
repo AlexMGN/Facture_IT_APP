@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="logo_wrapper">
+    <img src="../../assets/logo.svg" alt="">
+  </div>
+
+  <div class="login_wrapper">
+    <input class="rounded" placeholder="Votre email" type="text" required>
+    <input class="rounded" placeholder="Mot de passe" type="password" required>
+    <input class="rounded" placeholder="Votre email" type="text" required>
+    <input class="rounded" placeholder="Votre adresse (N° rue)" type="text" required>
+    <input class="rounded" placeholder="Votre ville" type="text" required>
+    <input class="rounded" placeholder="Votre code postal" type="text" required>
+    <select class="rounded">
+      <option value="0" selected="true" disabled="disabled">Votre pays</option>
+      <option value="{{ country.name }}" *ngFor="let country of countries">{{ country.name }}</option>
+    </select>
+    <input class="rounded" placeholder="Votre téléphone portable" type="text" required>
+    <input class="rounded" placeholder="Votre téléphone fix" type="text">
+  </div>
+
+
+  <div class="btn_login">
+    <button class="rounded btn">S'inscrire</button>
+    <p class="margin" (click)="login()">Se connecter</p>
+  </div>
+</ion-content>

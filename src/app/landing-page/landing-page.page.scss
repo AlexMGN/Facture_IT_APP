@@ -1,0 +1,35 @@
+img {
+  max-width: 50%;
+}
+
+.logo_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logo_name {
+  font-size: 29px;
+  color : #585858;
+  position: absolute;
+  top: 50%;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  animation: rotate 1.5s 0.2s 2 forwards;
+  transform: translate(-50%, -50%)
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(359deg);
+  }
+}

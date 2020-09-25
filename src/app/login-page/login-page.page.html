@@ -1,0 +1,17 @@
+<ion-content>
+  <div class="logo_wrapper">
+    <img src="../../assets/logo.svg" alt="">
+  </div>
+
+  <div class="login_wrapper">
+    <input class="rounded" placeholder="Votre email" type="text" required>
+    <input class="rounded" placeholder="Mot de passe" type="password" required>
+  </div>
+
+
+  <div class="btn_login">
+    <button class="rounded btn" (click)="login()">Se connecter</button>
+    <p style="margin: auto" (click)="register()">S'inscrire</p>
+    <p (click)="forgot()">Mot de passe oublié</p>
+  </div>
+</ion-content>

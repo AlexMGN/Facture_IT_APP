@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="logo_wrapper">
+    <div (click)="goBack()" class="circleBase type1"><div class="arrow-left"></div></div>
+    <img src="../../assets/logo.svg" alt="">
+    <img class="avatar" src="https://firebasestorage.googleapis.com/v0/b/webradio-stream.appspot.com/o/Users%2F29%2FImages%2Fimage_1.png?alt=media&token=303af267-fa31-4ec1-9869-27670764b691" alt="">
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div style="width: 100%; text-align: center; margin-top: 10%">
+    <p>Ajouter un nouveau client</p>
+  </div>
+
+  <div class="login_wrapper">
+    <select class="rounded">
+      <option value="Professionnel" selected="true">Professionnel</option>
+      <option value="Particulier">Particulier</option>
+    </select>
+    <input class="rounded" placeholder="Nom du client" type="text" required>
+    <input class="rounded" placeholder="Email du client" type="text" required>
+    <input class="rounded" placeholder="Adresse" type="text" required>
+    <input class="rounded" placeholder="Ville" type="text" required>
+    <input class="rounded" placeholder="Code postal" type="text" required>
+    <select class="rounded">
+      <option value="0" selected="true" disabled="disabled">Pays</option>
+      <option value="{{ country.name }}" *ngFor="let country of countries">{{ country.name }}</option>
+    </select>
+    <input class="rounded" placeholder="N° téléphone portable" type="text" required>
+    <input class="rounded" placeholder="N° téléphone fix" type="text">
+  </div>
+
+
+  <div class="btn_login">
+    <button class="rounded btn">Ajouter</button>
+  </div>
+</ion-content>

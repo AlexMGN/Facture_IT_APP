@@ -1,0 +1,201 @@
+img {
+  max-width: 40%;
+}
+
+.logo_wrapper, .login_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+
+.avatar {
+  max-width: 15%;
+  position: absolute;
+  right: 26px;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right:10px solid white;
+  margin-right: 5px;
+}
+
+.circleBase {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.type1 {
+  width: 50px;
+  height: 50px;
+  background: #98C3FF;
+  border: 1px solid #707070;
+  margin: 0;
+  position: absolute;
+  left: 26px;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.paye-chart {
+  width: 55%;
+  justify-content: space-around ;
+}
+
+.waiting-chart {
+  width: 55%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #98C3FF;
+}
+
+.circular-chart.purple .circle {
+  stroke: #8281FF;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.info {
+  margin: auto;
+}
+
+.create_bill {
+  height:130px;
+  width:130px;
+  background-color: #98C3FF;
+  color: white;
+  border-radius:50%;
+  transition:all 1s;
+  font-size: 19px;
+}
+
+.create_devis {
+  height:130px;
+  width:130px;
+  background-color: #98C3FF;
+  color: white;
+  border-radius:50%;
+  transition:all 1s;
+  font-size: 19px;
+}
+
+.create {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tableArea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-default {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,td{
+  border: 1px solid #707070;
+}
+
+table {
+  color: #707070;
+  font-size: 13px;
+  text-align: center;
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 30%;
+}
+table td, table th {
+  border: 1px solid #707070;
+  padding: 3%;
+}
+
+table tr th {
+  border-top: 0;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+table tr:last-child th {
+  border-bottom: 0;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+
+.check_btn {
+  border-radius: 27px;
+  border: 1px solid #707070;
+  height: 25px;
+  width: 62px;
+  outline: none;
+  text-align: center;
+}
+
+.btn {
+  color: white;
+  font-size: 13px;
+  background-color: #FF5D5D;
+}

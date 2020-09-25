@@ -1,0 +1,169 @@
+<ion-content>
+  <div class="logo_wrapper">
+    <div (click)="goBack()" class="circleBase type1"><div class="arrow-left"></div></div>
+    <img src="../../assets/logo.svg" alt="">
+    <img class="avatar" src="https://firebasestorage.googleapis.com/v0/b/webradio-stream.appspot.com/o/Users%2F29%2FImages%2Fimage_1.png?alt=media&token=303af267-fa31-4ec1-9869-27670764b691" alt="">
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div style="width: 100%; text-align: center; margin-top: 5%;">
+      <p style="margin: auto">{{ client.name }}</p>
+  </div>
+
+  <div class="flex-wrapper">
+    <div class="paye-chart">
+      <svg viewBox="0 0 36 36" class="circular-chart green">
+        <path class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle"
+              stroke-dasharray="70, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <svg width="100%" height="20%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="20%" viewBox="0 0 325.799 325.799" style="enable-background:new 0 0 325.799 325.799; fill: #B5B5B5;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M285.306,296.302c-73.7,28.4-156.5-8.4-184.9-82.2c-0.5-1.4-1-2.7-1.5-4.1h147.8c5.5,0,10-4.5,10-10s-4.5-10-10-10h-153.1    c-3-15.8-3.3-32.1-1-48h170.1c5.5,0,10-4.5,10-10s-4.5-10-10-10h-165.6c22.7-75.6,102.5-118.5,178.2-95.8c3.3,1,6.7,2.1,10.1,3.4    c5.1,2,10.9-0.5,13-5.7c2-5.1-0.5-10.9-5.7-13h-0.1c-84-32.3-178.3,9.6-210.7,93.6c-2.2,5.7-4.1,11.5-5.6,17.4h-39.6    c-5.5,0-10,4.5-10,10s4.5,10,10,10h35.7c-2,16-1.7,32.1,0.9,48h-36.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h41.3    c26.1,86.2,117.1,134.9,203.2,108.9c3.8-1.2,7.6-2.5,11.3-3.9c5.1-2,7.7-7.8,5.7-12.9    C296.206,296.902,290.406,294.302,285.306,296.302z"/>
+	</g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+</svg>
+
+        <text style="font-size: 3px" x="18" y="20.35" class="percentage">Payé</text>
+        <text style="font-size: 4px" x="18" y="25.35" class="percentage">232,340€</text>
+      </svg>
+    </div>
+
+    <div class="waiting-chart">
+      <svg viewBox="0 0 36 36" class="circular-chart purple">
+        <path class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <path class="circle"
+              stroke-dasharray="85, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+        />
+        <svg width="100%" height="20%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="20%" viewBox="0 0 325.799 325.799" style="enable-background:new 0 0 325.799 325.799; fill: #B5B5B5;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M285.306,296.302c-73.7,28.4-156.5-8.4-184.9-82.2c-0.5-1.4-1-2.7-1.5-4.1h147.8c5.5,0,10-4.5,10-10s-4.5-10-10-10h-153.1    c-3-15.8-3.3-32.1-1-48h170.1c5.5,0,10-4.5,10-10s-4.5-10-10-10h-165.6c22.7-75.6,102.5-118.5,178.2-95.8c3.3,1,6.7,2.1,10.1,3.4    c5.1,2,10.9-0.5,13-5.7c2-5.1-0.5-10.9-5.7-13h-0.1c-84-32.3-178.3,9.6-210.7,93.6c-2.2,5.7-4.1,11.5-5.6,17.4h-39.6    c-5.5,0-10,4.5-10,10s4.5,10,10,10h35.7c-2,16-1.7,32.1,0.9,48h-36.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h41.3    c26.1,86.2,117.1,134.9,203.2,108.9c3.8-1.2,7.6-2.5,11.3-3.9c5.1-2,7.7-7.8,5.7-12.9    C296.206,296.902,290.406,294.302,285.306,296.302z"/>
+	</g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+          <g>
+</g>
+</svg>
+
+        <text style="font-size: 3px" x="18" y="20.35" class="percentage">En attente</text>
+        <text style="font-size: 4px" x="18" y="25.35" class="percentage">52,340€</text>
+      </svg>
+    </div>
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div style="width: 100%; text-align: center; margin-top: 5%; margin-bottom: 5%;">
+    <p style="margin: auto; margin-bottom: 6%">Informations</p>
+    <p class="info">{{ client.adresse }}</p>
+    <p class="info">{{ client.ville }}, {{ client.cp }}</p>
+    <p class="info">{{ client.pays }}</p>
+    <br>
+    <p class="info">{{ client.fixe }}</p>
+    <p class="info">{{ client.portable }}</p>
+    <p class="info">{{ client.email }}</p>
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div class="create">
+    <button class="create_bill">
+      <span>Créer une facture</span>
+    </button>
+
+    <button class="create_devis">
+      <span>Créer un devis</span>
+    </button>
+  </div>
+
+  <hr style="border-bottom: 1px solid #707070;width: 85%;">
+
+  <div class="tableArea">
+    <table class="table-default">
+      <tr>
+        <th>N°</th>
+        <th>PDF</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let facture of client.factures">
+        <th>{{ facture.id }}</th>
+        <td><ion-icon style="font-size: 25px" name="eye-outline"></ion-icon></td>
+        <td><button class="check_btn btn">Annuler</button></td>
+      </tr>
+    </table>
+  </div>
+</ion-content>
